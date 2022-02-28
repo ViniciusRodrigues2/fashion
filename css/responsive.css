@@ -1,0 +1,134 @@
+@charset 'UTF-8';
+
+@media (max-width:600px) {
+    .principal{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.61), rgba(12, 21, 145, 0.219)), url(../imagens/topo.jpg);
+        background-size: cover;
+        background-position: left center;
+        background-repeat: no-repeat;
+        margin: 0;
+        position: relative;
+    }
+    .principal nav{
+        display: block;
+        height: 8vh;
+        margin-bottom: 0;
+    }
+    span{
+        display: flex;
+        color: white;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        padding: 2%;
+    }
+    .principal #menu #nav-menu{
+        opacity: 0;
+    }
+    .principal nav ul img{
+        position: absolute;
+        left: 0;
+    }
+    .principal nav li {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.932);
+    }
+    .check{
+        position: absolute;
+        z-index: 1;
+        right: 10px;
+        top: 15px;
+    }
+    .principal #menu:checked ~ #nav-menu{
+        opacity: 1;
+    }
+    .principal nav li{
+        padding: 5.3%;
+    }
+    .principal nav li a{
+        display: block;
+        padding:6%;
+        margin: 0;
+        text-align: center;
+        border-bottom: 2px solid whitesmoke;
+        width: 50%;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    .content-porti{
+        background-color: rgba(100, 100, 100, 0.486);
+        display: block;
+        margin: 0;
+    }
+    main .content-porti p{
+        display: block;
+        width: 100%;
+        letter-spacing: 0;
+        text-align: left;
+        margin: 0;
+        text-indent: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .content-imagem{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container-cnt{
+        display: block;
+        margin: 0;
+        padding: 0;
+        height: 70vh;
+        width: 100%;
+    }
+    .container-cnt h2{
+        margin: 0;
+        display: block;
+        font-size: 24px;
+        text-align: center;
+    }
+    .container-cnt p{
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        text-align: left;
+    }
+    .container-call{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+    .container-call h4{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #143f52;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: bolder;
+    }
+    .container-maps iframe{
+        width: 530px;
+    }
+    .rodape{
+        background-color: rgb(0, 10, 31);
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0 3.5% 0 3.5%;
+        height: 50px;
+    }
+}
